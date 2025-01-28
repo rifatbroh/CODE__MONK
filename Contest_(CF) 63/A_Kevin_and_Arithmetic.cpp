@@ -18,7 +18,7 @@ using namespace std;
 #define yes cout << "YES"
 #define no cout << "NO"
 #define pb push_back
-#define vi vector<ll>
+#define vi vector<int>
 #define vp vector<pair<int, int>>
 #define mp map<int, int>
 #define vec(v) v.begin(), v.end()
@@ -30,24 +30,20 @@ const ll MOD = 1e9 + 7;
 const ll INF = 1e9;
 const ld EPS = 1e-9;
 
-void solve()
-{
-    /* _THE^MAXTAN_*/
-    ll n;
+void solve() {
+    int n;
     cin >> n;
-    vi v(n);
-    ll odd = 0, even = 0;
-
-    for (ll i=1; i<=n; i++) {
-        cin >> v[i];
-        if (v[i]%2 == 0) even++;
-        else odd++;
+    
+    int odd = 0;
+    for (int i = 0; i < n; i++) {
+        int a;
+        cin >> a;
+        odd += a % 2;
     }
-    if (even >=1)
-        cout << 1+odd ;
-    else 
-        cout << odd-1 ;
- }
+    
+    int ans = min(n - 1, odd) + min(1, n - odd);
+    cout << ans ;
+}
 int main()
 {
     OLD_MAXTAN
