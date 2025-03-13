@@ -18,14 +18,15 @@ using namespace std;
 #define yes cout << "YES"
 #define no cout << "NO"
 #define pb push_back
-#define vi vector<int>
-#define vin(a) for (auto &it : a) cin >> it;
+#define y vector<int>
+#define z(a) for (auto &it : a) cin >> it;
 #define vout(a) for (auto &it : a) cout << it << " ";
 #define vp vector<pair<int, int>>
 #define mp map<int, int>
 #define vec(v) v.begin(), v.end()
 /* !    !   !   !   !   !   !   */
 #define PI 3.1415926535897932384626433832795
+#define x int n; cin >> n;
 
 const int MAX_N = 1e5 + 5;
 const ll MOD = 1e9 + 7;
@@ -35,11 +36,8 @@ const ld EPS = 1e-9;
 void solve()
 {
     /* _THE^MAXTAN_*/
-    int n;
-    cin >> n;
-    vi v(n);
-    vin(v);
-
+    x; y v(n); z(v);
+    
     mp m;
     for (int i=0; i<n; i++) {
         m[v[i]]++;
