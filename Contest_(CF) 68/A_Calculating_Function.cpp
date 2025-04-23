@@ -9,7 +9,7 @@
 using namespace std;
 int main()
 {
-    int n;
+    ll n;
     cin >> n;
 
     // ll ans = 0;
